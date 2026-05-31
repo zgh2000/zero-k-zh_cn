@@ -1,0 +1,6 @@
+backup/
+temp/
+__pycache__/
+*.pyc
+*.sdz
+*.sdz.bak
