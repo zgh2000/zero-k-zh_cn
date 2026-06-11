@@ -41,12 +41,21 @@ uv run python deploy_zh.py    # 部署全部汉化到游戏目录
 |------|------|
 | `deploy_zh.py` | 主部署脚本，定义 DEPLOY_PLAN |
 | `zk_i18n.py` | 工具模块（备份/解包/注入） |
-| `work/campaign_zh_CN.lua` | 翻译数据库 |
+| `work/campaign_zh_CN.lua` | 翻译数据库（星球、百科、通用） |
 | `work/configuration.lua` | 添加 zh_CN 语言注册 |
 | `work/chililobby.lua` | 大厅 UI 翻译（233 条 i18n） |
 | `work/gui_campaign_handler.lua` | 星球界面汉化 |
 | `work/gui_campaign_codex_handler.lua` | 百科界面汉化 |
 | `work/api_planet_battle_handler.lua` | 星球战斗界面汉化 |
+| `work/campaign_units.zh_cn.json` | 战役单位翻译（19 条） |
+| `work/common.zh_cn.json` | 游戏内通用文本（81 条） |
+| `work/epicmenu.zh_cn.json` | Epic 菜单翻译（41 条） |
+| `work/healthbars.zh_cn.json` | 血条标签翻译（22 条） |
+| `work/interface.zh_cn.json` | 界面文本翻译（127 条） |
+| `work/misc.zh_cn.json` | 杂项文本翻译（3 条） |
+| `work/pw_units.zh_cn.json` | 行星战争单位翻译（23 条） |
+| `work/resbars.zh_cn.json` | 资源栏文本翻译（41 条） |
+| `work/units.zh_cn.json` | 单位名称翻译（248 条） |
 | `SKILL.md` | 完整经验总结（踩坑记录） |
 
 ## 关键约束
@@ -65,7 +74,14 @@ RecoilEngine 的 Lua 环境**不允许在函数对象上存储字段**（如 `fu
 
 ## 添加新翻译
 
+### Lua 翻译（campaign_zh_CN.lua 等）
 1. 在 `work/campaign_zh_CN.lua` 的对应 `T.*` 表中添加翻译条目
 2. 如需在 widget 中使用，按标准模式添加 loader + 查找函数
 3. 将修改的文件路径加入 `deploy_zh.py` 的 `DEPLOY_PLAN`
 4. 运行 `uv run python deploy_zh.py`
+
+### JSON 翻译文件
+JSON 翻译文件位于 `luaui/configs/lang/` 目录下，格式为 `模块名.zh_cn.json`。
+1. 在 `work/` 目录中创建或编辑对应的 `.zh_cn.json` 文件
+2. 将文件路径加入 `deploy_zh.py` 的 `DEPLOY_PLAN`（`zk-stable.sdz` 部分）
+3. 运行 `uv run python deploy_zh.py`

@@ -14,15 +14,22 @@ DEPLOY_PLAN = {
     "zkmenu-stable.sdz": {
         "luamenu/widgets/chobby/components/configuration.lua": "configuration.lua",
         "luamenu/widgets/chobby/i18n/chililobby.lua": "chililobby.lua",
+        "luamenu/widgets/gui_chili_lobby.lua": "gui_chili_lobby.lua",
         "luamenu/widgets/gui_campaign_handler.lua": "gui_campaign_handler.lua",
         "luamenu/widgets/api_planet_battle_handler.lua": "api_planet_battle_handler.lua",
         "luamenu/widgets/gui_campaign_codex_handler.lua": "gui_campaign_codex_handler.lua",
         "campaign/sample/campaign_zh_CN.lua": "campaign_zh_CN.lua",
     },
     "zk-stable.sdz": {
+        "luaui/configs/lang/campaign_units.zh_cn.json": "campaign_units.zh_cn.json",
         "luaui/configs/lang/common.zh_cn.json": "common.zh_cn.json",
-        "luaui/configs/lang/healthbars.zh_cn.json": "healthbars.zh_cn.json",
         "luaui/configs/lang/epicmenu.zh_cn.json": "epicmenu.zh_cn.json",
+        "luaui/configs/lang/healthbars.zh_cn.json": "healthbars.zh_cn.json",
+        "luaui/configs/lang/interface.zh_cn.json": "interface.zh_cn.json",
+        "luaui/configs/lang/misc.zh_cn.json": "misc.zh_cn.json",
+        "luaui/configs/lang/pw_units.zh_cn.json": "pw_units.zh_cn.json",
+        "luaui/configs/lang/resbars.zh_cn.json": "resbars.zh_cn.json",
+        "luaui/configs/lang/units.zh_cn.json": "units.zh_cn.json",
     },
 }
 

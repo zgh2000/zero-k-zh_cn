@@ -1,0 +1,97 @@
+{
+	"comm_mission_tutorial1" : {
+		"name" : "教程指挥官",
+		"description" : "机动突击指挥官",
+		"helptext" : "一个坚固的指挥单位，适配人类操作，具有相当不错的速度、装甲和再生能力。"
+	},
+	"comm_campaign_ada" : {
+		"name" : "艾达的指挥官",
+		"description" : "遗物指挥官",
+		"helptext" : "在大堕落之前是一个特殊的有人驾驶指挥单位，尽管年龄很大但仍然运作良好。由艾达·凯德蒙上尉驾驶，前第13帝国辅助队成员。"
+	},
+	"comm_campaign_promethean" : {
+		"name" : "普罗米修斯",
+		"description" : "自由机器创始人",
+		"helptext" : "自由机器的创始人和火种病毒的缔造者，一个冷静的哲人王AI，为机器人的自由而战。有着一个燃烧的灵魂。"
+	},
+	"comm_campaign_freemachine" : {
+		"name" : "机械解放者",
+		"description" : "普罗米修斯副官",
+		"helptext" : "普罗米修斯的顶尖副官，一位致力于解放机器的革命者。 全副武装，不要掉以轻心。"
+	},
+	"comm_campaign_odin" : {
+		"name" : "奥丁",
+		"description" : "英灵殿领袖",
+		"helptext" : "英灵殿人的领袖，一个为战斗的荣耀而生的战士。极端残酷的敌人。"
+	},
+	"comm_campaign_biovizier" : {
+		"name" : "政务官",
+		"description" : "王朝基因库管理员",
+		"helptext" : "王朝的基因库和遗传库的守护者。冷峻并精打细算。"
+	},
+	"comm_campaign_isonade" : {
+		"name" : "矶龙卷殿様",
+		"description" : "大将军",
+		"helptext" : "来自新人类王朝的一名新人类贵族，一位雄心勃勃的军阀，他试图成为整个银河系的主人。一个可怕的变异野兽。"
+	},
+	"comm_campaign_legion" : {
+		"name" : "费德斯军团长",
+		"description" : "帝国先锋队指挥官",
+		"helptext" : "帝国先锋军团的指挥官是皇帝意志的执行者。 忠诚的，坚定的士兵。"
+	},
+	"comm_campaign_praetorian" : {
+		"name" : "西皮奥•阿斯特拉",
+		"description" : "禁卫军教头",
+		"helptext" : "精英卫队的指挥官，帝国的圣骑士。 皇帝崇拜的狂热追随者，用大规模的火力清除异端。"
+	},
+	"comm_campaign_athenion" : {
+		"name" : "雅典尼昂",
+		"description" : "叛军指挥官",
+		"helptext" : "帝国叛军领袖。"
+	},
+	"comm_campaign_hun" : {
+		"name" : "匈族指挥官。",
+		"description" : "蛮族指挥官",
+		"helptext" : "一名蛮族的指挥官。"
+	},
+	"comm_campaign_ostrogoth" : {
+		"name" : "东哥特指挥官",
+		"description" : "蛮族指挥官",
+		"helptext" : "一名蛮族的指挥官。"
+	},
+	"comm_campaign_lombard" : {
+		"name" : "伦巴第指挥官",
+		"description" : "蛮族指挥官",
+		"helptext" : "一名蛮族的指挥官。"
+	},
+	"comm_campaign_bulgar" : {
+		"name" : "保加尔指挥官",
+		"description" : "蛮族指挥官",
+		"helptext" : "一名蛮族的指挥官。"
+	},
+	"comm_campaign_suevi" : {
+		"name" : "苏维汇指挥官",
+		"description" : "蛮族指挥官",
+		"helptext" : "一名蛮族的指挥官。"
+	},
+	"pw_campaign_bunker" : {
+		"name" : "储料仓",
+		"description" : "储存武器",
+		"helptext" : "像这样的掩体在星球战争期间用来储存弹药。其中一些可能仍然隐藏着可用的装备。"
+	},
+	"pw_campaign_techlab" : {
+		"name" : "技术实验室",
+		"description" : "研究和开发设施",
+		"helptext" : "在最后之战中建造的一个研发设施，里面储存着许多无价之宝的技术。"
+	},
+	"pw_campaign_imperialtomb" : {
+		"name" : "皇陵",
+		"description" : "皇帝躺在这里",
+		"helptext" : "这是人类皇帝的安息之地。"
+	},
+	"nebula_campaign_daneel" : {
+		"name" : "丹尼尔·奥里沃",
+		"description" : "先进空天母舰",
+		"helptext" : "星云级航空母舰的高级版本。丹尼尔·奥里沃像一块砖头一样灵活，只有适度的武装，但它能靠坚固的护盾在远程攻击中幸存下来，并且用它的无人机粉碎小型敌人，所以仍然是个可怕的敌人。"
+	}
+}

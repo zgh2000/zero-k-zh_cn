@@ -36,11 +36,15 @@ zh_cn_translation/
     ├── gui_campaign_handler.lua       # 星球界面
     ├── gui_campaign_codex_handler.lua # 百科界面
     ├── api_planet_battle_handler.lua  # 星球战斗界面
-    ├── common.zh_cn.json     # 游戏内通用文本
-    ├── epicmenu.zh_cn.json   # Epic 菜单
-    ├── healthbars.zh_cn.json # 血条标签
-    ├── interface.zh_cn.json  # 界面文本
-    └── units.zh_cn.json      # 单位名称
+    ├── campaign_units.zh_cn.json     # 战役单位
+    ├── common.zh_cn.json             # 游戏内通用文本
+    ├── epicmenu.zh_cn.json           # Epic 菜单
+    ├── healthbars.zh_cn.json         # 血条标签
+    ├── interface.zh_cn.json          # 界面文本
+    ├── misc.zh_cn.json               # 杂项文本
+    ├── pw_units.zh_cn.json           # 行星战争单位
+    ├── resbars.zh_cn.json            # 资源栏文本
+    └── units.zh_cn.json              # 单位名称
 ```
 
 ## 翻译范围
@@ -52,4 +56,11 @@ zh_cn_translation/
 | 百科条目 + 分类 | 52 条目 / 6 分类 | 完成 |
 | 地形类型 | 21 种 | 完成 |
 | Epic 菜单 | 41 条 | 完成 |
-| 游戏内文本 | 多条 | 完成 |
+| 单位名称 | 248 条 | 完成 |
+| 界面文本 | 127 条 | 完成 |
+| 资源栏文本 | 41 条 | 完成 |
+| 战役单位 | 19 条 | 完成 |
+| 行星战争单位 | 23 条 | 完成 |
+| 血条标签 | 22 条 | 完成 |
+| 杂项文本 | 3 条 | 完成 |
+| 游戏内通用文本 | 81 条 | 完成 |
