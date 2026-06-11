@@ -32,6 +32,10 @@ DEPLOY_PLAN = {
         "luaui/configs/lang/pw_units.zh_cn.json": "pw_units.zh_cn.json",
         "luaui/configs/lang/resbars.zh_cn.json": "resbars.zh_cn.json",
         "luaui/configs/lang/units.zh_cn.json": "units.zh_cn.json",
+        "luaui/widgets/gui_chili_endgamewindow.lua": "gui_chili_endgamewindow.lua",
+        "luaui/widgets/gui_chili_inactivity_win.lua": "gui_chili_inactivity_win.lua",
+        "luaui/widgets/gui_chili_vote.lua": "gui_chili_vote.lua",
+        "luaui/widgets/mission_messagebox_zk.lua": "mission_messagebox_zk.lua",
     },
 }
 
