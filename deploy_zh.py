@@ -16,6 +16,7 @@ DEPLOY_PLAN = {
         "luamenu/widgets/chobby/i18n/chililobby.lua": "chililobby.lua",
         "luamenu/widgets/gui_chili_lobby.lua": "gui_chili_lobby.lua",
         "luamenu/widgets/gui_settings_window.lua": "gui_settings_window.lua",
+        "luamenu/configs/gameconfig/zk/settingsmenu.lua": "settingsmenu.lua",
         "luamenu/widgets/gui_campaign_handler.lua": "gui_campaign_handler.lua",
         "luamenu/widgets/api_planet_battle_handler.lua": "api_planet_battle_handler.lua",
         "luamenu/widgets/gui_campaign_codex_handler.lua": "gui_campaign_codex_handler.lua",
