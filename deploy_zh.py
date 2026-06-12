@@ -21,6 +21,7 @@ DEPLOY_PLAN = {
         "luamenu/widgets/api_planet_battle_handler.lua": "api_planet_battle_handler.lua",
         "luamenu/widgets/gui_campaign_codex_handler.lua": "gui_campaign_codex_handler.lua",
         "campaign/sample/campaign_zh_CN.lua": "campaign_zh_CN.lua",
+        "campaign/sample/commconfig.lua": "commconfig.lua",
     },
     "zk-stable.sdz": {
         "luaui/configs/lang/campaign_units.zh_cn.json": "campaign_units.zh_cn.json",
