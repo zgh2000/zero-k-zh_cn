@@ -97,7 +97,7 @@ function CreateWindow()
   contentPane:AddChild(check2)
 
   local button = Chili.Button:New({
-    caption = "关闭",
+    caption = i18n("close"),
     OnClick = {Close}
   })
   contentPane:AddChild(button)

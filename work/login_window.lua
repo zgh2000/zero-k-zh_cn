@@ -495,7 +495,7 @@ function LoginWindow:createAgreementWindow()
 		y = 200,
 		width = 650,
 		height = 530,
-		caption = "用户协议",
+		caption = i18n("user_agreement"),
 		resizable = false,
 		draggable = false,
 		parent = WG.Chobby.lobbyInterfaceHolder,
@@ -550,7 +550,7 @@ function LoginWindow:createAgreementWindow()
 		width = 135,
 		y = 430,
 		height = 70,
-		caption = "接受",
+		caption = i18n("accept"),
 		objectOverrideFont = Configuration:GetFont(3),
 		OnClick = {
 			function()
@@ -568,7 +568,7 @@ function LoginWindow:createAgreementWindow()
 		width = 135,
 		y = 430,
 		height = 70,
-		caption = "拒绝",
+		caption = i18n("decline"),
 		objectOverrideFont = Configuration:GetFont(3),
 		OnClick = {
 			function()

@@ -144,7 +144,7 @@ local function InitializeControls(parentControl)
 		height = 30,
 		parent = parentControl,
 		objectOverrideFont = Configuration:GetFont(3),
-		caption = "回放",
+		caption = i18n("replays"),
 	}
 
 	local loadingPanel = Panel:New {
@@ -165,7 +165,7 @@ local function InitializeControls(parentControl)
 		valign = "center",
 		parent = loadingPanel,
 		objectOverrideFont = Configuration:GetFont(3),
-		caption = "加载中",
+		caption = i18n("loading"),
 	}
 
 	-------------------------

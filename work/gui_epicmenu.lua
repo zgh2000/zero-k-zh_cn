@@ -2339,7 +2339,7 @@ local function MakeExitConfirmWindow(text, action, height, unpauseOnYes, unpause
 	Button:New{
 		name = 'confirmExitNoButton';
 		parent = window_exit_confirm,
-		caption = "否",
+		caption = i18n("no"),
 		objectOverrideFont = WG.GetFont(),
 		OnClick = {
 			function()

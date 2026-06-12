@@ -634,7 +634,7 @@ local function CreateMainWindow()
 		height = 35,
 		valign = "center",
 		align  = "center",
-		caption = "模组",
+		caption = i18n("modules"),
 		autosize = false,
 		font   = {size = 20, outline = true, color = {.8,.8,.8,.9}, outlineWidth = 2, outlineWeight = 2},
 		parent = mainWindow,

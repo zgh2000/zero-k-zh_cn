@@ -92,7 +92,7 @@ local function SetupWindow()
 		parent = newMainWindow;
 		padding = {0, 0, 0,0},
 		margin = {0, 0, 0, 0},
-		caption = "胜利";
+		caption = i18n("win");
 		font   = {size = 20, color = {1,1,1,1}, outlineColor = {0,0,0,0.7}, outlineWidth = 3},
 		tooltip = "停止等待掉线玩家并宣布自己获胜。";
 		OnClick = {

@@ -1,42 +1,42 @@
 local awards = {
 	pwn = {
-		text = "完全歼灭",
+		text = i18n("complete_annihilation"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_pwn.png",
 	},
 	navy = {
-		text = "舰队上将",
+		text = i18n("fleet_admiral"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_navy.png",
 	},
 	air = {
-		text = "空军上将",
+		text = i18n("airforce_general"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_air.png",
 	},
 	nux = {
-		text = "末日成就奖",
+		text = i18n("apocalyptic_achievement"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_nux.png",
 	},
 	shell = {
-		text = "龟壳",
+		text = i18n("turtle_shell"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_shell.png",
 	},
 	fire = {
-		text = "烧烤大师",
+		text = i18n("master_grill_chef"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_fire.png",
 	},
 	emp = {
-		text = "EMP巫师",
+		text = i18n("emp_wizard"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_emp.png",
 	},
 	slow = {
-		text = "交通警察",
+		text = i18n("traffic_cop"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_slow.png",
 	},
 	disarm = {
-		text = "和平使者",
+		text = i18n("peacemaker"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_disarm.png",
 	},
 	t3 = {
-		text = "实验工程师",
+		text = i18n("experimental_engineer"),
 		image = "LuaMenu/configs/gameConfig/zk/awards/trophy_t3.png",
 	},
 	cap = {

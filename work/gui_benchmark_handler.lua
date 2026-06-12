@@ -83,7 +83,7 @@ local function RunBenchmark(config)
 	local perm = (config.fixedOrder and GetIdentityPermutation(totalRuns)) or GetRandomPermutation(totalRuns)
 
 	local function DownloadsComplete()
-		WG.Chobby.InformationPopup("Running the benchmark. It may take a few minutes to launch each test case. Zero-K will close when the benchmark is complete. Submit the result by allowing the upload of an automated crash report.", {caption = "中止", closeFunc = CancelFunc, buttonClass = "negative_button", width = 524, height = 260})
+		WG.Chobby.InformationPopup("Running the benchmark. It may take a few minutes to launch each test case. Zero-K will close when the benchmark is complete. Submit the result by allowing the upload of an automated crash report.", {caption = i18n("abort"), closeFunc = CancelFunc, buttonClass = "negative_button", width = 524, height = 260})
 
 		local runData = config.runs
 		local dataFile = io.open(dataFilePath, "w")
@@ -163,7 +163,7 @@ local function InitializeControls(parentControl)
 		height = 30,
 		parent = parentControl,
 		objectOverrideFont = Configuration:GetFont(3),
-		caption = "基准测试",
+		caption = i18n("benchmarker"),
 	}
 
 	Button:New {
@@ -222,7 +222,7 @@ local function InitializeControls(parentControl)
 			right = "35%",
 			y = offset,
 			height = 80,
-			caption = "生成脚本",
+			caption = i18n("generate_script"),
 			tooltip = "Generates a startscript from luamenu/startscripts/config.lua.",
 			objectOverrideFont = Configuration:GetButtonFont(4),
 			classname = "action_button",

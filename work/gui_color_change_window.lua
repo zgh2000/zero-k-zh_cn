@@ -79,7 +79,7 @@ local function CreateColorChangeWindow(opts)
 		height = 35,
 		align = "center",
 		objectOverrideFont = Configuration:GetFont(4),
-		caption = "选择颜色",
+		caption = i18n("choose_color"),
 		parent = colorChangeWindow,
 	}
 

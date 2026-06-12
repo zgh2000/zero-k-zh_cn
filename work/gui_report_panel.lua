@@ -86,7 +86,7 @@ local function CreateReportWindow(parentHolder, userName, extraText, usePopupBac
 		height = 40,
 		boxalign = "right",
 		boxsize = 20,
-		caption = "踢出",
+		caption = i18n("kick"),
 		checked = false,
 		objectOverrideFont = WG.Chobby.Configuration:GetFont(3),
 		tooltip = "Start a poll to kick the player or spectator. Do not kick players without a good reason, such as to halt intentional teamkilling.",

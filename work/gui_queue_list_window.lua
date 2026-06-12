@@ -597,7 +597,7 @@ local function InitializeControls(window)
 		y = WG.TOP_LABEL_Y,
 		height = 20,
 		objectOverrideFont = Configuration:GetFont(3),
-		caption = "匹配对战",
+		caption = i18n("matchmaking"),
 		parent = window
 	}
 

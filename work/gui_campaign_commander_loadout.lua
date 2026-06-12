@@ -137,7 +137,7 @@ local function GetExperienceDisplay(parentControl, barHeight, fancy)
 		height = barHeight or 32,
 		value = progressProportion,
 		max = 1,
-		caption = "等级 " .. (commLevel + 1),
+		caption = i18n("level") .. " " .. (commLevel + 1),
 		objectOverrideFont = WG.Chobby.Configuration:GetFont(3),
 		parent = parentControl,
 	}

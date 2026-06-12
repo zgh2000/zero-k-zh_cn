@@ -395,7 +395,7 @@ local function InitializeActivityPromptHandler()
 		y = 4,
 		bottom = 4,
 		padding = {0,0,0,0},
-		caption = "加入",
+		caption = i18n("join"),
 		objectOverrideFont = Configuration:GetButtonFont(3),
 		classname = "action_button",
 		OnClick = {
@@ -1066,7 +1066,7 @@ local function MakeFactionSelector(parent, x, y, SelectionFunc, CancelFunc, righ
 		y = offset,
 		width = 170,
 		height = 35,
-		caption = "阵营页面",
+		caption = i18n("factions_page"),
 		objectOverrideFont = Configuration:GetButtonFont(2),
 		classname = "option_button",
 		padding = {2,4,4,4},
@@ -1177,7 +1177,7 @@ local function InitializeControls(window)
 		y = WG.TOP_LABEL_Y,
 		height = 20,
 		objectOverrideFont = Configuration:GetFont(3),
-		caption = "星球战争",
+		caption = i18n("planetwars"),
 		parent = window
 	}
 
@@ -1211,7 +1211,7 @@ local function InitializeControls(window)
 		bottom = 12,
 		width = 150,
 		height = 32,
-		caption = "星图",
+		caption = i18n("galaxy_map"),
 		objectOverrideFont = Configuration:GetButtonFont(2),
 		classname = "option_button",
 		padding = {2,4,4,4},

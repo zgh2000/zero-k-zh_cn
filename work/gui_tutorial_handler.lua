@@ -57,7 +57,7 @@ local function InitializeTutorialPrompt()
 		y = 4,
 		bottom = 4,
 		padding = {0,0,0,0},
-		caption = "开始教程",
+		caption = i18n("play_tutorial"),
 		objectOverrideFont = WG.Chobby.Configuration:GetButtonFont(4),
 		classname = "action_button",
 		OnClick = {
@@ -147,7 +147,7 @@ local function CheckTutorialPopup()
 		y = offset,
 		right = "18%",
 		height = 70,
-		caption = "开始教程",
+		caption = i18n("play_tutorial"),
 		objectOverrideFont = Configuration:GetButtonFont(4),
 		classname = "action_button",
 		padding = {2,4,4,4},

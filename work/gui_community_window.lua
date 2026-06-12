@@ -229,7 +229,7 @@ local function GetTutorialControl()
 		height = 35,
 		align = "center",
 		objectOverrideFont = Configuration:GetFont(5),
-		caption = "欢迎来到 Zero-K",
+		caption = i18n("welcome_to_zk"),
 		parent = holder,
 	}
 
@@ -269,7 +269,7 @@ local function GetTutorialControl()
 		y = offset,
 		right = "18%",
 		height = 70,
-		caption = "开始战役",
+		caption = i18n("play_campaign"),
 		objectOverrideFont = Configuration:GetButtonFont(4),
 		classname = "action_button",
 		padding = {2,4,4,4},
@@ -763,7 +763,7 @@ local function InitializeControls(window)
 	--	height = 30,
 	--	parent = window,
 	--	objectOverrideFont = WG.Chobby.Configuration:GetFont(3),
-	--	caption = "社区",
+	--	caption = i18n("community"),
 
 	local lobby = WG.LibLobby.lobby
 	local staticCommunityData = LoadStaticCommunityData()

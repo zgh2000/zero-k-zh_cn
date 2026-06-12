@@ -500,7 +500,7 @@ local function SetupControls()
 		y = 7,
 		width = 160,
 		height = B_HEIGHT,
-		caption = "退出到大厅",
+		caption = i18n("exit_to_lobby"),
 		objectOverrideFont = WG.GetFont(18),
 		OnClick = {
 			function()
@@ -519,7 +519,7 @@ local function SetEndgameCaption(winners)
 	local gaiaAllyTeamID = select(6, Spring.GetTeamInfo(Spring.GetGaiaTeamID(), false))
 	if #winners > 1 then
 		if spec then
-			endgame_caption = "游戏结束！"
+			endgame_caption = i18n("game_over")
 			endgame_fontcolor = {1,1,1,1}
 		else
 			local i_win = false
@@ -530,10 +530,10 @@ local function SetEndgameCaption(winners)
 			end
 
 			if i_win then
-				endgame_caption = "胜利！"
+				endgame_caption = i18n("victory")
 				endgame_fontcolor = {0,1,0,1}
 			else
-				endgame_caption = "失败！"
+				endgame_caption = i18n("defeat")
 				endgame_fontcolor = {1,0,0,1}
 			end
 		end
@@ -544,20 +544,20 @@ local function SetEndgameCaption(winners)
 		end
 		if spec then
 			if (winners[1] == gaiaAllyTeamID) then
-				endgame_caption = "平局！"
+				endgame_caption = i18n("draw")
 				endgame_fontcolor = {1,1,1,1}
 			else
 				endgame_caption = (winnerTeamName .. " wins!")
 				endgame_fontcolor = {1,1,1,1}
 			end
 		elseif (winners[1] == Spring.GetMyAllyTeamID()) then
-			endgame_caption = "胜利！"
+			endgame_caption = i18n("victory")
 			endgame_fontcolor = {0,1,0,1}
 		elseif (winners[1] == gaiaAllyTeamID) then
-			endgame_caption = "平局！"
+			endgame_caption = i18n("draw")
 			endgame_fontcolor = {1,1,0,1}
 		else
-			endgame_caption = "失败！" -- could somehow add info on who won (eg. for FFA) but as-is it won't fit
+			endgame_caption = i18n("defeat") -- could somehow add info on who won (eg. for FFA) but as-is it won't fit
 			endgame_fontcolor = {1,0,0,1}
 		end
 	end
@@ -621,7 +621,7 @@ function widget:Initialize()
 	widgetHandler:RemoveCallIn("Update")
 	widgetHandler:RemoveCallIn("GameFrame")
 	if Spring.IsGameOver() then
-		window_endgame.caption = "游戏中断"
+		window_endgame.caption = i18n("game_aborted")
 		StartEndgameTimer(1)
 	end
 

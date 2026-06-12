@@ -171,7 +171,7 @@ local function CreateNextButton(parent)
 		height = 24,
 		right = 4,
 		bottom = 8,
-		caption = "下一步",
+		caption = i18n("next"),
 		font = {size = 14},
 		OnClick = { function(self, x, y, mouse)
 				if mouse == 1 and not nextButtonLocked then

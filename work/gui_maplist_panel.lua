@@ -182,7 +182,7 @@ local function InitializeControls()
 		height = 20,
 		parent = mapListWindow,
 		objectOverrideFont = Configuration:GetFont(3),
-		caption = "选择地图",
+		caption = i18n("select_map"),
 	}
 
 	local function CloseFunc()
@@ -221,7 +221,7 @@ local function InitializeControls()
 	--	valign = "center",
 	--	parent = loadingPanel,
 	--	objectOverrideFont = Configuration:GetFont(3),
-	--	caption = "加载中",
+	--	caption = i18n("loading"),
 	--}
 
 	-------------------------
