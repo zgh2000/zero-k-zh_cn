@@ -1042,6 +1042,7 @@ local function AddOption(path, option) --Note: this is used when loading widgets
 		option = {
 			type = 'button',
 			name = pathend,
+			i18nKey = pathend,
 			icon = icon,
 			OnChange = function(self)
 				MakeSubWindow(path2, false)  --this made this button open another menu
@@ -2104,7 +2105,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 		right = 5,
 		bottom = B_HEIGHT + 5;
 		
-		caption = 'Simple Settings',
+		caption = i18n("simple_settings") or 'Simple Settings',
 		tooltip = 'Untick to expand the number of graphics and interface options.',
 		checked = settings.simpleSettingsMode,
 		OnChange = {function(self)
@@ -2135,7 +2136,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 			parent = buttonBar,
 			children = {
 				Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/arrow_left.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = 'Back', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = i18n("back") or 'Back', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 			}
 		}
 	end
@@ -2150,7 +2151,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 		parent = buttonBar,
 		children = {
 			Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/find.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-			Label:New{caption = 'Search', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = i18n("search") or 'Search', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 		}
 	}
 	
@@ -2170,7 +2171,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 			parent = buttonBar,
 			children = {
 				Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/undo_white.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = i18n("reset") or 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 			}
 		}
 	else
@@ -2187,7 +2188,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 			parent = buttonBar,
 			children = {
 				Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/undo_white.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = i18n("reset") or 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 			}
 		}
 	end
@@ -2202,14 +2203,14 @@ MakeSubWindow = function(path, pause, labelScroll)
 		parent = buttonBar,
 		children = {
 			Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/close.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-			Label:New{caption = 'Close', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = i18n("close") or 'Close', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 		}
 	}
 	
 	KillSubWindow(true)
 	curPath = path -- must be done after KillSubWindow
 	window_sub_cur = Window:New{
-		caption = (searchedElement and "Searching in: \"" .. path .. "...\"") or ((not root) and (path) or "INGAME MENU"),
+		caption = (searchedElement and "Searching in: \"" .. path .. "...\"") or ((not root) and (path) or (i18n("ingame_menu") or "INGAME MENU")),
 		x = settings.sub_pos_x,
 		y = math.floor(settings.sub_pos_y),
 		clientWidth = window_width,
@@ -2766,6 +2767,7 @@ local function MakeSaveLoadButtons()
 	{
 		type='button',
 		name='Save Game',
+		i18nKey = 'save_game',
 		desc = 'Save game (not available in multiplayer and tutorials).',
 		OnChange = function()
 				if WG.SaveGame and CanSaveGame() then
@@ -2781,6 +2783,7 @@ local function MakeSaveLoadButtons()
 	{
 		type='button',
 		name='Load Game',
+		i18nKey = 'load_game',
 		desc = '',
 		OnChange = function()
 				if WG.SaveGame then
@@ -2821,6 +2824,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Vote Resign',
+		i18nKey = 'vote_resign',
 		desc = "Ask teammates to resign",
 		icon = imgPath..'epicmenu/whiteflag_check.png',
 		OnChange = function()
@@ -2835,6 +2839,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Resign',
+		i18nKey = 'resign',
 		desc = "Abandon team and become spectator",
 		icon = imgPath..'epicmenu/whiteflag.png',
 		OnChange = function()
@@ -2863,6 +2868,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Restart',
+		i18nKey = 'restart',
 		desc = "Restart the game",
 		icon = imgPath..'epicmenu/undo.png',
 		OnChange = function()
@@ -2892,6 +2898,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Exit to Lobby',
+		i18nKey = 'exit_to_lobby',
 		desc = "Leave the game.",
 		icon = imgPath..'epicmenu/exit.png',
 		OnChange = function()

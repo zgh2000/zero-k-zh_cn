@@ -1483,7 +1483,7 @@ local function MakeBonusObjectiveLine(parent, bottom, planetData, bonusObjective
 		end
 
 
-		if MakeRewardList(parent, bottom, "Bonus Objectives", {{objectiveList, GetObjectiveInfo, IsObjectiveUnlocked, true}}, false) then
+		if MakeRewardList(parent, bottom, i18n("bonus_objectives") or "Bonus Objectives", {{objectiveList, GetObjectiveInfo, IsObjectiveUnlocked, true}}, false) then
 
 
 			return bottom + 98
@@ -1540,7 +1540,7 @@ local function MakeBonusObjectiveLine(parent, bottom, planetData, bonusObjective
 		end
 
 
-		if MakeRewardList(parent, bottom, "Bonus Objectives", {{objectiveList, GetObjectiveInfo, IsObjectiveUnlocked, true}}, false) then
+		if MakeRewardList(parent, bottom, i18n("bonus_objectives") or "Bonus Objectives", {{objectiveList, GetObjectiveInfo, IsObjectiveUnlocked, true}}, false) then
 
 
 			return bottom + 98
@@ -1633,7 +1633,7 @@ local function MakeRewardsPanel(parent, bottom, planetData, cullUnlocked, showCo
 
 
 
-	if MakeRewardList(parent, bottom, "Unlocks", unlockRewards, cullUnlocked) then
+	if MakeRewardList(parent, bottom, i18n("unlocks") or "Unlocks", unlockRewards, cullUnlocked) then
 
 
 		bottom = bottom + 98

@@ -1247,6 +1247,19 @@ return {
 			submit = "提交",
 			time_in_queue = "排队时长",
 			yes = "是",
+
+			-- Campaign screens
+			save_load = "保存/加载",
+			stats = "统计",
+			records = "记录",
+			planet_label = "星球",
+			time = "时间",
+			losses = "损失",
+			bonuses = "奖励",
+			difficulty = "难度",
+			best_attempts_desc = "以下是您在每个任务中的最佳尝试，首先按时间、然后按损失、然后按奖励来评估以打破平局。",
+			bonus_objectives = "额外目标",
+			unlocks = "解锁",
 		},
 		es = {
 		connect_to_spring_server = 'Conectar al servidor de spring',
