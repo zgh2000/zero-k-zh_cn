@@ -1042,6 +1042,7 @@ local function AddOption(path, option) --Note: this is used when loading widgets
 		option = {
 			type = 'button',
 			name = pathend,
+			i18nKey = pathend,
 			icon = icon,
 			OnChange = function(self)
 				MakeSubWindow(path2, false)  --this made this button open another menu
@@ -2766,6 +2767,7 @@ local function MakeSaveLoadButtons()
 	{
 		type='button',
 		name='Save Game',
+		i18nKey = 'save_game',
 		desc = 'Save game (not available in multiplayer and tutorials).',
 		OnChange = function()
 				if WG.SaveGame and CanSaveGame() then
@@ -2781,6 +2783,7 @@ local function MakeSaveLoadButtons()
 	{
 		type='button',
 		name='Load Game',
+		i18nKey = 'load_game',
 		desc = '',
 		OnChange = function()
 				if WG.SaveGame then
@@ -2821,6 +2824,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Vote Resign',
+		i18nKey = 'vote_resign',
 		desc = "Ask teammates to resign",
 		icon = imgPath..'epicmenu/whiteflag_check.png',
 		OnChange = function()
@@ -2835,6 +2839,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Resign',
+		i18nKey = 'resign',
 		desc = "Abandon team and become spectator",
 		icon = imgPath..'epicmenu/whiteflag.png',
 		OnChange = function()
@@ -2863,6 +2868,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Restart',
+		i18nKey = 'restart',
 		desc = "Restart the game",
 		icon = imgPath..'epicmenu/undo.png',
 		OnChange = function()
@@ -2892,6 +2898,7 @@ local function MakeQuitButtons()
 	AddOption('', {
 		type = 'button',
 		name = 'Exit to Lobby',
+		i18nKey = 'exit_to_lobby',
 		desc = "Leave the game.",
 		icon = imgPath..'epicmenu/exit.png',
 		OnChange = function()
