@@ -62,6 +62,7 @@ DEPLOY_PLAN = {
         "luaui/configs/lang/pw_units.zh_cn.json": "pw_units.zh_cn.json",
         "luaui/configs/lang/resbars.zh_cn.json": "resbars.zh_cn.json",
         "luaui/configs/lang/units.zh_cn.json": "units.zh_cn.json",
+        "luaui/configs/lang/commands.zh_cn.json": "commands.zh_cn.json",
         "gamedata/modularcomms/moduledefs.lua": "moduledefs.lua",
         "luaui/widgets/gui_chili_endgamewindow.lua": "gui_chili_endgamewindow.lua",
         "luaui/widgets/gui_chili_inactivity_win.lua": "gui_chili_inactivity_win.lua",
@@ -70,6 +71,8 @@ DEPLOY_PLAN = {
         "luaui/widgets/gui_epicmenu.lua": "gui_epicmenu.lua",
         "luaui/widgets/localwidgets.lua": "localwidgets.lua",
         "luaui/widgets/mission_messagebox_zk.lua": "mission_messagebox_zk.lua",
+        "luaui/configs/integral_menu_config.lua": "integral_menu_config.lua",
+        "luaui/configs/nubtron_texts.lua": "nubtron_texts.lua",
     },
 }
 
