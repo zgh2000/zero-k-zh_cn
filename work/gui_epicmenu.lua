@@ -2105,7 +2105,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 		right = 5,
 		bottom = B_HEIGHT + 5;
 		
-		caption = i18n("simple_settings") or 'Simple Settings',
+		caption = WG.Translate('epicmenu', 'simple_settings') or 'Simple Settings',
 		tooltip = 'Untick to expand the number of graphics and interface options.',
 		checked = settings.simpleSettingsMode,
 		OnChange = {function(self)
@@ -2136,7 +2136,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 			parent = buttonBar,
 			children = {
 				Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/arrow_left.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = i18n("back") or 'Back', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = WG.Translate('epicmenu', 'back') or 'Back', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 			}
 		}
 	end
@@ -2151,7 +2151,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 		parent = buttonBar,
 		children = {
 			Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/find.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = i18n("search") or 'Search', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = WG.Translate('epicmenu', 'search') or 'Search', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 		}
 	}
 	
@@ -2171,7 +2171,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 			parent = buttonBar,
 			children = {
 				Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/undo_white.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = i18n("reset") or 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = WG.Translate('epicmenu', 'reset') or 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 			}
 		}
 	else
@@ -2188,7 +2188,7 @@ MakeSubWindow = function(path, pause, labelScroll)
 			parent = buttonBar,
 			children = {
 				Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/undo_white.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = i18n("reset") or 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = WG.Translate('epicmenu', 'reset') or 'Reset', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 			}
 		}
 	end
@@ -2203,14 +2203,14 @@ MakeSubWindow = function(path, pause, labelScroll)
 		parent = buttonBar,
 		children = {
 			Image:New{file = LUAUI_DIRNAME  .. 'images/epicmenu/close.png', width = 16, height = 16, parent = button, x = 4, y = 2},
-				Label:New{caption = i18n("close") or 'Close', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
+				Label:New{caption = WG.Translate('epicmenu', 'close') or 'Close', x = 24, y = 4, objectOverrideFont = WG.GetFont(),}
 		}
 	}
 	
 	KillSubWindow(true)
 	curPath = path -- must be done after KillSubWindow
 	window_sub_cur = Window:New{
-		caption = (searchedElement and "Searching in: \"" .. path .. "...\"") or ((not root) and (path) or (i18n("ingame_menu") or "INGAME MENU")),
+		caption = (searchedElement and "Searching in: \"" .. path .. "...\"") or ((not root) and (path) or (WG.Translate('epicmenu', 'ingame_menu') or "INGAME MENU")),
 		x = settings.sub_pos_x,
 		y = math.floor(settings.sub_pos_y),
 		clientWidth = window_width,
@@ -2340,7 +2340,7 @@ local function MakeExitConfirmWindow(text, action, height, unpauseOnYes, unpause
 	Button:New{
 		name = 'confirmExitNoButton';
 		parent = window_exit_confirm,
-		caption = i18n("no"),
+		caption = WG.Translate('epicmenu', 'no') or "否",
 		objectOverrideFont = WG.GetFont(),
 		OnClick = {
 			function()
