@@ -323,10 +323,10 @@ local function InitializeScoresWindow(parent)
 	local init = true
 	
 	local canPrioritiseBy = {
-		{i18n("time") or "Time",
-		i18n("losses") or "Losses",
-		i18n("bonuses") or "Bonuses",
-		i18n("difficulty") or "Difficulty",
+		"Time",
+		"Losses",
+		"Bonuses",
+		"Difficulty",
 	}
 	local internalPrioName = {
 		"frames",
@@ -349,11 +349,11 @@ local function InitializeScoresWindow(parent)
 	}
 	
 	local headings = {
-		{name = i18n("planet") or "Planet",     x = "0%", right = "80%"},
-		{name = i18n("time") or "Time",       x = "20%", right = "60%"},
-		{name = i18n("losses") or "Losses",     x = "40%", right = "40%"},
-		{name = i18n("bonuses") or "Bonuses",    x = "60%", right = "20%"},
-		{name = i18n("difficulty") or "Difficulty", x = "80%", right = "0%"},
+		{name = "Planet",     x = "0%", right = "80%"},
+		{name = "Time",       x = "20%", right = "60%"},
+		{name = "Losses",     x = "40%", right = "40%"},
+		{name = "Bonuses",    x = "60%", right = "20%"},
+		{name = "Difficulty", x = "80%", right = "0%"},
 	}
 	
 	local totalRowControl = false
@@ -460,7 +460,7 @@ local function InitializeScoresWindow(parent)
 		width = 700,
 		height = 30,
 		objectOverrideFont = WG.Chobby.Configuration:GetFont(2),
-		text = i18n("best_attempts_desc") or "Here are your best attempts at each mission, evaluating each first by",
+		text = "Here are your best attempts at each mission, evaluating each first by",
 		parent = parent,
 	}
 	TextBox:New {
@@ -584,10 +584,10 @@ local function InitializeControls(window)
 	}
 
 	local tabs = {
-		MakeTab(i18n("save_load") or "Save/Load", {WG.CampaignSaveWindow.GetControl()}),
+		MakeTab("Save/Load", {WG.CampaignSaveWindow.GetControl()}),
 		--MakeStandardTab("Difficulty", InitializeDifficultyWindow),
-		MakeStandardTab(i18n("stats") or "Stats", InitializeStatsWindow),
-		MakeStandardTab(i18n("records") or "Records", InitializeScoresWindow),
+		MakeStandardTab("Stats", InitializeStatsWindow),
+		MakeStandardTab("Records", InitializeScoresWindow),
 	}
 
 	local tabPanel = Chili.DetachableTabPanel:New {

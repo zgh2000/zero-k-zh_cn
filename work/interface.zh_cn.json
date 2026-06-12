@@ -135,25 +135,6 @@
 		"few" : "%{count}队列中的单位",
 		"many" : "%{count}队列中的单位",
 		"other" : "%{count}队列中的单位"
-	},
-	"Save Game" : "保存游戏",
-	"Load Game" : "加载游戏",
-	"Resign" : "投降",
-	"Restart" : "重新开始",
-	"Exit to Lobby" : "退出到大厅",
-	"Hotkeys" : "快捷键",
-	"Simple Settings" : "简化设置",
-	"Settings" : "设置",
-	"Help" : "帮助",
-	"Back" : "返回",
-	"Search" : "搜索",
-	"Reset" : "重置",
-	"Close" : "关闭",
-	"Defence Ranges" : "防御范围",
-	"Click this planet to begin." : "点击此星球开始。",
-	"Menu (F10)" : "菜单 (F10)",
-	"Lobby (F11)" : "大厅 (F11)",
-	"Vote Resign" : "投票投降",
-	"Click this planet to begin." : "点击此星球开始。"
+	}
 }
 

@@ -70,21 +70,6 @@ end
 function widget:Initialize()
 	WG.LimitFps.ForceRedrawPeriod(5) -- High FPS for the first few seconds to shorten the initial white flash.
 	
-	-- Set i18n locale BEFORE loading Chobby to ensure translations are correct from the start
-	if WG and WG.i18n then
-		local config_file = "chobby_config.json"
-		if VFS.FileExists(config_file) then
-			local success, config_content = pcall(VFS.LoadFile, config_file)
-			if success and config_content then
-				local lang = config_content:match('"language"%s*:%s*"([^"]+)"')
-				if lang and lang ~= "en" then
-					Spring.Echo("Setting i18n locale from config: " .. lang)
-					WG.i18n.setLocale(lang)
-				end
-			end
-		end
-	end
-	
 	if not WG.LibLobby then
 		Spring.Log("chobby", LOG.ERROR, "Missing liblobby.")
 		widgetHandler:RemoveWidget(widget)
@@ -138,18 +123,6 @@ function widget:Initialize()
 		if key == "language" then
 			Spring.Echo("Set language to "..value)
 			i18n.setLocale(value)
-		end
-	end
-		-- Read language from springsettings.cfg and set i18n locale
-	local springsettings_path = "springsettings.cfg"
-	if VFS.FileExists(springsettings_path) then
-		local settings_content = VFS.LoadFile(springsettings_path)
-		if settings_content then
-			local lang = settings_content:match("Language%s*=%s*(%S+)")
-			if lang and lang ~= "en" then
-				Spring.Echo("Setting language from springsettings: " .. lang)
-				i18n.setLocale(lang)
-			end
 		end
 	end
 	
