@@ -86,6 +86,13 @@ function widget:Initialize()
 	WG.Chobby = Chobby
 	WG.Chobby:_Initialize()
 
+	-- Set i18n locale from saved language setting AFTER Chobby is loaded
+	if i18n and Chobby.Configuration and Chobby.Configuration.language then
+		if Chobby.Configuration.language ~= "en" then
+			i18n.setLocale(Chobby.Configuration.language)
+		end
+	end
+
 	interfaceRoot = WG.Chobby.GetInterfaceRoot()
 
 	lobbyInterfaceHolder = interfaceRoot.GetLobbyInterfaceHolder()
