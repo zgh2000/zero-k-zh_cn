@@ -568,7 +568,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_radarnet",
-		humanName = "Field Radar",
+		humanName = "战场雷达",
 		description = "Field Radar - Attaches a basic radar system. Requires at least a level 2 module slot.",
 		image = moduleImagePath .. "module_fieldradar.png",
 		limit = 1,
@@ -581,7 +581,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_personal_cloak",
-		humanName = "Personal Cloak",
+		humanName = "个人隐形",
 		description = "Personal Cloak - A personal cloaking device. Reduces total speed by 12% and cannot be used with shields. Requires at least a level 2 module slot.",
 		image = moduleImagePath .. "module_personal_cloak.png",
 		limit = 1,
@@ -596,7 +596,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_cloak_field",
-		humanName = "Cloaking Field",
+		humanName = "隐形力场",
 		description = "Cloaking Field - Cloaks all nearby units. Requires Radar Jammer. Requires at least a level 4 module slot.",
 		image = moduleImagePath .. "module_cloak_field.png",
 		limit = 1,
@@ -615,7 +615,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_resurrect",
-		humanName = "Lazarus Device",
+		humanName = "拉撒路装置",
 		description = "Lazarus Device - Upgrade nanolathe to allow resurrection. Requires at least a level 3 module slot.",
 		image = moduleImagePath .. "module_resurrect.png",
 		limit = 1,
@@ -629,7 +629,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_jumpjet",
-		humanName = "Jumpjets",
+		humanName = "跳跃喷射",
 		description = "Jumpjets - Leap over obstacles and out of danger. Each High Powered Servos reduces jump reload by 1s. Requires at least a level 4 module slot.",
 		image = moduleImagePath .. "module_jumpjet.png",
 		limit = 1,
@@ -645,7 +645,7 @@ local moduleDefs = {
 	-- Repeat Modules
 	{
 		name = "module_companion_drone",
-		humanName = "Companion Drone",
+		humanName = "伴侣无人机",
 		description = "Companion Drone - Commander spawns protective drones. Requires at least a level 3 module slot._COUNT_",
 		image = moduleImagePath .. "module_companion_drone.png",
 		limit = 8,
@@ -658,7 +658,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_battle_drone",
-		humanName = "Battle Drone",
+		humanName = "战斗无人机",
 		description = "Battle Drone - Commander spawns heavy drones. Requires Companion Drone and at least a level 4 module slot._COUNT_",
 		image = moduleImagePath .. "module_battle_drone.png",
 		limit = 8,
@@ -673,7 +673,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_autorepair",
-		humanName = "Autorepair",
+		humanName = "自动修复",
 		description = "Autorepair - Commander self-repairs at +12 hp/s at the cost of 100 health._COUNT_",
 		image = moduleImagePath .. "module_autorepair.png",
 		limit = 8,
@@ -687,7 +687,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_ablative_armor",
-		humanName = "Ablative Armour Plates",
+		humanName = "烧蚀装甲板",
 		description = "Ablative Armour Plates - Provides 750 health._COUNT_",
 		image = moduleImagePath .. "module_ablative_armor.png",
 		limit = 8,
@@ -700,7 +700,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_heavy_armor",
-		humanName = "High Density Plating",
+		humanName = "高密度装甲",
 		description = "High Density Plating - Provides 2000 health but reduces total speed by 2%. Requires Ablative Armour Plates and  at least a level 3 module slot._COUNT_",
 		image = moduleImagePath .. "module_heavy_armor.png",
 		limit = 8,
@@ -715,7 +715,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_dmg_booster",
-		humanName = "Damage Booster",
+		humanName = "伤害增幅器",
 		description = "Damage Booster - Increases damage by 15% but reduces total speed by 2%._COUNT_",
 		image = moduleImagePath .. "module_dmg_booster.png",
 		limit = 8,
@@ -730,7 +730,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_high_power_servos",
-		humanName = "High Power Servos",
+		humanName = "大功率伺服电机",
 		description = "High Power Servos - Increases speed by 4._COUNT_",
 		image = moduleImagePath .. "module_high_power_servos.png",
 		limit = 8,
@@ -743,7 +743,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_adv_targeting",
-		humanName = "Adv. Targeting System",
+		humanName = "高级瞄准系统",
 		description = "Advanced Targeting System - Increases range by 7.5% but reduces total speed by 2%._COUNT_",
 		image = moduleImagePath .. "module_adv_targeting.png",
 		limit = 8,
@@ -757,7 +757,7 @@ local moduleDefs = {
 	},
 	{
 		name = "module_adv_nano",
-		humanName = "CarRepairer's Nanolathe",
+		humanName = "修车匠的纳米蚀刻",
 		description = "CarRepairer's Nanolathe - Increases build power by 5._COUNT_",
 		image = moduleImagePath .. "module_adv_nano.png",
 		limit = 8,
@@ -857,7 +857,7 @@ end
 local chassisDef = {
 	name = "knight",
 	chassis = "knight",
-	humanName = "Knight",
+	humanName = "骑士",
 	image = LUA_DIRNAME .. "images/chassis_cremcom.png",
 	secondPeashooter = true,
 	highestDefinedLevel = highestDefinedLevel,
