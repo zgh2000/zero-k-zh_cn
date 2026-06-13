@@ -2598,13 +2598,13 @@ local function GetMainPanel(parent, width, height)
 		objectOverrideFont = WG.GetSpecialFont(13, "epic_game_fg", {color = color.game_fg}),
 		height = height - 9,
 		width = B_WIDTH_TOMAINMENU + 1,
-		caption = "Menu (\255\0\255\0"..WG.crude.GetHotkey("crudesubmenu").."\008)",
+		caption = "菜单 (\255\0\255\0"..WG.crude.GetHotkey("crudesubmenu").."\008)",
 		padding = btn_padding,
 		margin = btn_margin,
 		tooltip = '',
 		children = {
 			--Image:New{file = title_image, height = B_HEIGHT-2, width = B_HEIGHT-2, x = 2, y = 4},
-			--Label:New{caption = "Menu (\255\0\255\0"..WG.crude.GetHotkey("crudesubmenu").."\008)", valign = "center"}
+			--Label:New{caption = "菜单 (\255\0\255\0"..WG.crude.GetHotkey("crudesubmenu").."\008)", valign = "center"}
 		},
 	}
 	holderWidth = holderWidth + 80
@@ -2616,7 +2616,7 @@ local function GetMainPanel(parent, width, height)
 			objectOverrideFont = WG.GetSpecialFont(13, "epic_game_fg", {color = color.game_fg}),
 			height = height - 9,
 			width = B_WIDTH_TOMAINMENU + 1,
-			caption = "Lobby (\255\0\255\0"..WG.crude.GetHotkey("viewlobby").."\008)",
+			caption = "大厅 (\255\0\255\0"..WG.crude.GetHotkey("viewlobby").."\008)",
 			padding = btn_padding,
 			margin = btn_margin,
 			tooltip = '',

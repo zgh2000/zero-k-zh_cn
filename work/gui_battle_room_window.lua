@@ -2362,7 +2362,7 @@ local function SetupPlayerPanel(playerParent, spectatorParent, battle, battleID)
 				else
 
 
-					humanName = "Team " .. (teamIndex + 1)
+					humanName = "队伍 " .. (teamIndex + 1)
 
 
 				end
@@ -2860,7 +2860,7 @@ local function SetupPlayerPanel(playerParent, spectatorParent, battle, battleID)
 					else
 
 
-						humanName = "Team " .. (teamIndex + 1)
+				humanName = "队伍 " .. (teamIndex + 1)
 
 
 					end
@@ -4672,7 +4672,7 @@ local function InitializeSetupPage(subPanel, screenHeight, pageConfig, nextPage,
 		classname = "action_button",
 
 
-		caption = (nextPage and "Next") or i18n("start"),
+		caption = (nextPage and "下一步") or i18n("start"),
 
 
 		objectOverrideFont = Configuration:GetButtonFont(buttonFont),
@@ -6829,7 +6829,7 @@ function BattleRoomWindow.GetSingleplayerControl(setupData)
 				battleLobby = WG.LibLobby.localLobby
 
 
-				battleLobby:SetBattleState(WG.Chobby.Configuration:GetPlayerName(), singleplayerGame, defaultMap, "Skirmish Battle")
+				battleLobby:SetBattleState(WG.Chobby.Configuration:GetPlayerName(), singleplayerGame, defaultMap, "遭遇战")
 
 
 

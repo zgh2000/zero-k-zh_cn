@@ -69,12 +69,16 @@ DEPLOY_PLAN = {
         "luaui/widgets/gui_chili_vote.lua": "gui_chili_vote.lua",
         "luaui/widgets/gui_chili_commander_upgrade.lua": "gui_chili_commander_upgrade.lua",
         "luaui/widgets/gui_epicmenu.lua": "gui_epicmenu.lua",
+        "luaui/widgets/gui_defenserange.lua": "gui_defenserange.lua",
+        "luaui/widgets/unit_initial_queue.lua": "unit_initial_queue.lua",
         "luaui/widgets/localwidgets.lua": "localwidgets.lua",
         "luaui/widgets/mission_messagebox_zk.lua": "mission_messagebox_zk.lua",
         "luaui/configs/integral_menu_config.lua": "integral_menu_config.lua",
         "luaui/configs/nubtron_texts.lua": "nubtron_texts.lua",
         "luaui/configs/customcmdtypes.lua": "customcmdtypes.lua",
+        "luaui/configs/startup_info_selector.lua": "startup_info_selector.lua",
         "luarules/gadgets/cmd_raw_move.lua": "cmd_raw_move.lua",
+        "luarules/gadgets/init_auto_ready.lua": "init_auto_ready.lua",
     },
 }
 

@@ -24,14 +24,21 @@ local skirmishSetupData = {
 				"困难",
 				"残酷",
 			},
-			optionTooltip = {
-				"Recommended for players with no strategy game experience.",
-				"Recommended for players with some strategy game experience, or experience with related genres (such as MOBA).",
-				"Recommended for experienced strategy gamers with some familiarity with streaming economy.",
-				"Recommended for veteran strategy gamers.",
-				"Recommended for veteran strategy gamers who aren't afraid of losing.",
-				"Recommended for veterans of Zero-K.",
-			}
+			optionTooltip = {
+
+				"推荐给没有策略游戏经验的玩家。",
+
+				"推荐给有一定策略游戏经验，或有相关类型游戏经验（如MOBA）的玩家。",
+
+				"推荐给熟悉流式经济的有经验策略游戏玩家。",
+
+				"推荐给资深策略游戏玩家。",
+
+				"推荐给不怕失败的资深策略游戏玩家。",
+
+				"推荐给Zero-K资深玩家。",
+
+			}
 		},
 		{
 			humanName = "选择地图",

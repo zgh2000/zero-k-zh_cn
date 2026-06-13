@@ -485,7 +485,7 @@ local factoryButtonLayoutOverride = {
 
 local commandPanels = {
 	{
-		humanName = "Orders",
+		humanName = "指令",
 		name = "orders",
 		inclusionFunction = function(cmdID, factoryUnitDefID, forceOrdersCommand, unitMobilePanelSize)
 			return ((cmdID >= 0 or unitMobilePanelSize == 1) and
@@ -497,7 +497,7 @@ local commandPanels = {
 		buttonLayoutConfig = buttonLayoutConfig.command,
 	},
 	{
-		humanName = "Econ",
+		humanName = "经济",
 		name = "economy",
 		inclusionFunction = function(cmdID)
 			local position = buildCmdEconomy[cmdID]
@@ -511,7 +511,7 @@ local commandPanels = {
 		buttonLayoutConfig = buttonLayoutConfig.build,
 	},
 	{
-		humanName = "Defence",
+		humanName = "防御",
 		name = "defence",
 		inclusionFunction = function(cmdID)
 			local position = buildCmdDefence[cmdID]
@@ -525,7 +525,7 @@ local commandPanels = {
 		buttonLayoutConfig = buttonLayoutConfig.build,
 	},
 	{
-		humanName = "Special",
+		humanName = "特殊",
 		name = "special",
 		inclusionFunction = function(cmdID)
 			local position = buildCmdSpecial[cmdID]
@@ -541,7 +541,7 @@ local commandPanels = {
 		buttonLayoutOverride = specialButtonLayoutOverride,
 	},
 	{
-		humanName = "Factory",
+		humanName = "工厂",
 		name = "factory",
 		inclusionFunction = function(cmdID)
 			local position = buildCmdFactory[cmdID]
