@@ -1546,7 +1546,7 @@ local function MakeHotkeyedControl(control, path, option, icon, noHotkey, minHei
 			--classname = "submenu_navigation_button",
 			--backgroundColor = color.sub_button_bg,
 			--textColor = color.sub_button_fg,
-			tooltip = 'Hotkey: ' .. hotkeystring,
+			tooltip = WG.Translate('epicmenu', 'hotkey') or 'Hotkey: ' .. hotkeystring,
 		}
 		
 		--local children = {}

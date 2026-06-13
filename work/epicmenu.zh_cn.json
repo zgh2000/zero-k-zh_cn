@@ -64,5 +64,6 @@
 	"Settings/HUD Panels" : "HUD面板",
 	"Settings/HUD Presets" : "HUD预设",
 	"Settings/Interface" : "界面",
-	"Settings/Misc" : "杂项"
+	"Settings/Misc" : "杂项",
+	"hotkey" : "快捷键："
 }

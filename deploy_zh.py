@@ -74,6 +74,7 @@ DEPLOY_PLAN = {
         "luaui/configs/integral_menu_config.lua": "integral_menu_config.lua",
         "luaui/configs/nubtron_texts.lua": "nubtron_texts.lua",
         "luaui/configs/customcmdtypes.lua": "customcmdtypes.lua",
+        "luarules/gadgets/cmd_raw_move.lua": "cmd_raw_move.lua",
     },
 }
 
