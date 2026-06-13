@@ -82,10 +82,10 @@ local commandDisplayConfig = {
 
 	[CMD_JUMP] = {texture = imageDir .. 'Bold/jump.png'},
 
-	[CMD_FIND_PAD] = {texture = imageDir .. 'Bold/rearm.png', tooltip = "Resupply: Return to nearest Airpad for repairs and, for bombers, ammo."},
+	[CMD_FIND_PAD] = {texture = imageDir .. 'Bold/rearm.png', tooltip = "补给：返回最近的机场进行维修，轰炸机还可补充弹药。"},
 
-	[CMD_EXCLUDE_PAD] = {texture = imageDir .. 'Bold/excludeairpad.png', tooltip = "Exclude Airpad: Toggle whether any of your aircraft use the targeted airpad."},
-	[CMD_FIELD_FAC_SELECT] = {texture = imageDir .. 'Bold/fac_select.png', tooltip = "Copy Factory Blueprint: Copy a production option from target functional friendly factory."},
+	[CMD_EXCLUDE_PAD] = {texture = imageDir .. 'Bold/excludeairpad.png', tooltip = "排除机场：切换你的飞机是否使用指定的机场。"},
+	[CMD_FIELD_FAC_SELECT] = {texture = imageDir .. 'Bold/fac_select.png', tooltip = "复制工厂蓝图：从目标友方工厂复制生产选项。"},
 
 	[CMD_EMBARK] = {texture = imageDir .. 'Bold/embark.png'},
 	[CMD_DISEMBARK] = {texture = imageDir .. 'Bold/disembark.png'},

@@ -73,6 +73,7 @@ DEPLOY_PLAN = {
         "luaui/widgets/mission_messagebox_zk.lua": "mission_messagebox_zk.lua",
         "luaui/configs/integral_menu_config.lua": "integral_menu_config.lua",
         "luaui/configs/nubtron_texts.lua": "nubtron_texts.lua",
+        "luaui/configs/customcmdtypes.lua": "customcmdtypes.lua",
     },
 }
 
