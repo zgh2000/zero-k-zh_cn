@@ -9,6 +9,7 @@ from datetime import datetime
 GAMES_DIR = Path(r"D:\SteamLibrary\steamapps\common\Zero-K\games")
 WORK_DIR = Path(r"D:\SteamLibrary\steamapps\common\Zero-K\zh_cn_translation\work")
 BACKUP_DIR = Path(r"D:\SteamLibrary\steamapps\common\Zero-K\zh_cn_translation\backup")
+ORIGINAL_DIR = BACKUP_DIR / "original"
 
 DEPLOY_PLAN = {
     "zkmenu-stable.sdz": {
@@ -105,6 +106,12 @@ def stream_deploy(sdz_name, updates):
     bak = BACKUP_DIR / datetime.now().strftime("%Y%m%d_%H%M%S") / sdz_name
     bak.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, bak)
+
+    orig = ORIGINAL_DIR / sdz_name
+    if not orig.exists():
+        ORIGINAL_DIR.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, orig)
+        print(f"  Original saved: {orig.name}")
 
     existing = set()
     modified = 0
