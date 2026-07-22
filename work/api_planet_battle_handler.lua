@@ -13,19 +13,6 @@ function widget:GetInfo()
 	}
 end
 
--- zh_CN translation support
-local zhCN = nil
-local zhOk, zhResult = pcall(VFS.Include, "campaign/sample/campaign_zh_CN.lua")
-if zhOk then zhCN = zhResult end
-
-local function T(planetName, field)
-	if zhCN and zhCN.planets and zhCN.planets[planetName] then
-		local val = zhCN.planets[planetName][field]
-		if val and val ~= "" then return val end
-	end
-	return nil
-end
-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
@@ -311,7 +298,7 @@ local function StartBattleForReal(planetID, planetData)
 	-- Briefing screen information
 	local informationText = {
 		name = planetData.name,
-		description = T(planetData.name, "extendedText") or planetData.infoDisplay.extendedText or T(planetData.name, "text") or planetData.infoDisplay.text,
+		description = planetData.infoDisplay.extendedText or planetData.infoDisplay.text,
 		tips = planetData.tips,
 	}
 
